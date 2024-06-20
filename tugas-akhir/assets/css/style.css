@@ -1,0 +1,206 @@
+@font-face {
+  font-family: fontold;
+  src: url(../font/OldLondonAlternate.ttf);
+}
+.container {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Navbar transparan ketika scroll paling atas */
+#navbar {
+  transition: background-color: 0.3s ease-in-out; 
+  background-color: transparent;
+}
+
+#navbar.scrolling-active {
+  background-color: black; /* Ubah sesuai keinginanmu */
+}
+
+#navbar.scrolling-active .navbar-brand,
+#navbar.scrolling-active .navbar-nav .nav-link,
+#navbar.scrolling-active .navbar-toggler-icon,
+#navbar.scrolling-active .form-control,
+#navbar.scrolling-active .btn-outline-success,
+#navbar.scrolling-active .text-dark,
+#navbar.scrolling-active .text-dark i {
+  color: white; /* Ubah warna elemen dalam navbar saat navbar muncul */
+}
+
+.navbar-brand {
+  font-family: 'fontold';
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+/* CSS Anda di dalam file styleindex.css */
+body, .nav-link, .form-control, .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link {
+  color: black; /* Warna default */
+  transition: color 0.3s; /* Efek transisi perubahan warna saat hover */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff0000; /* Ubah warna saat di-hover sesuai keinginan */
+}
+
+  /* Saat tidak di-hover, atur warna latar belakang dan teks menjadi putih */
+  .btn-outline-success {
+    background-color: white !important;
+    color: black !important;
+    border-color: white !important;
+  }
+
+  /* Saat hover pada tombol, atur warna latar belakang menjadi hijau */
+  .btn-outline-success:hover {
+    background-color: rgb(83, 83, 83) !important;
+    color: white !important;
+    border-color: rgb(70, 70, 70) !important;
+  }
+
+.logo-section .col-4 {
+  display: flex;
+  align-items: center;
+}
+
+.logo-section img {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Tetapkan lebar maksimum */
+}
+
+.explanation-section h1 {
+  font-size: 80px; /* Sesuaikan ukuran teks judul */
+  padding-top: 150px;
+  font-family: 'fontold';
+}
+
+.explanation-section p {
+  font-size: 18px; /* Sesuaikan ukuran teks paragraf */
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+hr {
+  border: none; /* Hapus border bawaan */
+  border-top: 8px solid black; /* Atur ketebalan 2px dengan warna hitam */
+}
+
+/* INI STORE */
+@font-face {
+  font-family: fontold;
+  src: url(../font/OldLondonAlternate.ttf);
+}
+
+.title {
+    margin-left: 350px; /* Atur jarak kiri sesuai keinginan Anda */
+    font-family: 'fontold'; /* Ganti dengan font yang Anda inginkan */
+    font-size: 68px; /* Atur ukuran teks sesuai keinginan Anda */
+}
+
+.navbar .nav .nav-item .nav-link {
+  color: rgb(0, 0, 0); /* Warna default sebelum di-hover */
+}
+
+.navbar .nav .nav-item .nav-link:hover {
+  color: rgb(0, 0, 0); /* Ganti warna pada saat di-hover */
+}
+
+p {
+  font-size: 12px; /* Ukuran font yang lebih kecil dari default */
+  font-family: 'Montserrat';
+  font-weight: 400;
+  padding-top: 8px;
+
+
+}
+/* Mengatur konten utama */
+.category {
+    font-family: 'fontold'; /* Ganti dengan font yang Anda inginkan */
+    font-size: 28px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.product-card {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .product-image {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-card .product-details {
+    text-align: center;
+    
+}
+
+.product-title {
+    font-family: 'fontold'; /* Ganti dengan font yang Anda inginkan */
+    font-size: 48px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: green;
+}
+.product-card .product-details {
+    text-align: center;
+    
+}
+.product-card .btn {
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0); /* Ubah warna sesuai keinginan Anda */
+    color: white; /* Ganti warna teks agar terlihat jelas */
+}
+
+.product-card .btn:hover {
+    background-color: rgb(73, 73, 73); /* Ubah warna saat dihover sesuai preferensi Anda */
+    color: white; /* Ganti warna teks saat dihover agar kontras */
+}
+
+
+/* Mengatur agar ketika mencapai 3 produk, pindah ke baris berikutnya */
+@media (max-width: 992px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,59 @@
+/* Mengatur lebar sidebar */
+
+.sidebar {
+    width: 300px; /* Atur sesuai kebutuhan */
+    background-color: #ffffff00;
+    color: #000000;
+    position: sticky;
+    top: 48px;
+    left: 0;
+    height: 100vh; /* Mengatur tinggi sidebar agar memenuhi tinggi viewport */
+    overflow-y: auto; /* Tambahkan scrollbar jika konten terlalu panjang */
+    z-index: 1000; /* Pastikan lebih tinggi dari z-index elemen lainnya */
+  }
+  
+  
+  .navbar.nav .nav-item .nav-link {
+    display: block;
+    color: #000000; /* Mengubah warna default */
+    text-decoration: none; /* Menghapus underline pada link */
+    transition: color 0.3s; /* Efek transisi perubahan warna saat hover */
+}
+
+.navbar.nav .nav-item .nav-link:hover {
+    color: #ff0000; /* Ubah warna saat di-hover sesuai keinginan */
+}
+  p {
+    font-size: 12px; /* Ukuran font yang lebih kecil dari default */
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding-top: 8px;
+  
+  
+  }
+  /* Mengatur konten utama */
+  main {
+    margin-left: 300px; /* Sesuaikan dengan lebar sidebar */
+    padding-top: 60px; /* Sesuaikan dengan tinggi navbar */
+  }
+  
+  .navbar.nav {
+    flex-direction: column; /* Mengubah orientasi menjadi vertikal */
+}
+
+.navbar.nav .nav-item {
+    width: 100%; /* Menjadikan lebar 100% untuk mengambil ruang penuh */
+}
+
+.navbar.nav .nav-item .nav-link {
+    display: block; /* Mengubah menjadi blok agar bertumpuk ke bawah */
+}
+
+/* Memberi warna latar belakang untuk item navbar yang aktif */
+.navbar .nav .nav-item .nav-link.active {
+    background-color: #f8f9fa; /* Warna latar belakang yang menunjukkan item aktif */
+    /* Tambahan gaya untuk menunjukkan item aktif */
+    color: #333; /* Warna teks yang sesuai */
+    font-weight: bold; /* Menebalkan teks */
+  }
+  
